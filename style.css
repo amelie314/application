@@ -8,8 +8,9 @@ body {
   padding: 30px;
   display: flex;
   justify-content: center;
-  background-color: #081731;
-  color: #f3f3f3;
+  background-color: #cbf3f0;
+  /* #081731 */
+  color: #4a4e69;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 1px;
@@ -33,11 +34,11 @@ h3:after {
   display: inline-block;
   width: 20px;
   height: 8px;
-  background-color: #CB1B45;
+  background-color: #2EC4B6;
   margin-left: 10px;
 }
 hr{
-  border: 0.5px solid #E6E6E6;
+  border: 0.5px solid #f1faee;
 }
 
 .application {
@@ -48,7 +49,8 @@ hr{
   /*按鈕設定*/  
 }
 .application .buttons a {
-  color: #CB1B45;
+  color: #4ECDC4;
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   margin: 0 15px 0 0;
@@ -59,7 +61,7 @@ h2, .butttons {
   display: inline;
 }
 .second{
-  border: 2px dotted #CB1B45 ;
+  border: 2px dotted #2EC4B6 ;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
@@ -83,7 +85,7 @@ h2, .butttons {
   padding: 5px 0;
 }
 .lessonList a{
-  color: #CB1B45;
+  color: #2EC4B6;
   text-decoration: none;
   display: inline-block;
   margin: 0;
