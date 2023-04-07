@@ -141,6 +141,18 @@ h2, .butttons {
 }
 
 @media screen and (max-width: 768px) { 
+  body {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #081731;
+    /* #081731 */
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
   h1{
     font-size: 26px;
   }
