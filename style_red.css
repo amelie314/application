@@ -156,6 +156,12 @@ h2, .butttons {
   h1{
     font-size: 26px;
   }
+  .content{
+    padding-left: 0;
+  }
+  h2, .butttons {
+    display: inline;
+  }
   .lessonList {
     padding-top: 32px;
     display: flex;
@@ -163,11 +169,15 @@ h2, .butttons {
     flex-wrap: wrap;
   }
   .lessonList li{
-    padding: 20px;
-    width: 200px;
+    padding: 15px;
+    width: 180px;
     margin-bottom: 20px;
     border: 1px solid #C2C5CC;
     border-radius: 5px; 
+  }
+  .content_schedule,img2{
+    display: inline;
+
   }
   .title{
     padding-top: 5px;
