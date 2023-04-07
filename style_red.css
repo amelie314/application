@@ -40,8 +40,25 @@ ul {
 
 h1 {
   margin: 0px 0px 20px 0px;
+  font-size: 32px;
 }
-
+.img{
+    margin-right: 25px;
+    float: right;
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 2px;
+    background-image: url(https://i.pinimg.com/564x/b8/31/e1/b831e1eecb32c74822f1d6929ea2d15f.jpg);
+    background-size: cover;;
+    color: rgba(256,256,256,1);   
+}
+h1,.img{
+  display:inline-block;
+}
+.top{
+  margin-bottom: 25px;
+}
 h3 {
   margin: 0;
   margin-bottom: 15px;
@@ -89,6 +106,8 @@ h2, .butttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .lessonList ul li h4{
@@ -109,4 +128,20 @@ h2, .butttons {
   margin: 0;
   cursor: pointer;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) { 
+  h1{
+    font-size: 26px;
+  }
+  .lessonList {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .lessonList li{
+    margin-bottom: 30px;
+  }
 }
