@@ -154,7 +154,15 @@ h2, .butttons {
   }
 
   h1{
-    font-size: 26px;
+    font-size: 28px;
+  }
+  .application .buttons a {
+    color: #EF3E36;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 15px 0 0;
+    cursor: pointer;
   }
   .content{
     padding-left: 0;
@@ -171,9 +179,15 @@ h2, .butttons {
   .lessonList li{
     padding: 15px;
     width: 180px;
+    margin-right: 3px;
     margin-bottom: 20px;
     border: 1px solid #C2C5CC;
     border-radius: 5px; 
+  }
+  .lessonList ul li h4{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
   }
   .content_schedule,img2{
     display: inline;
