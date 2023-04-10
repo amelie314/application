@@ -15,21 +15,31 @@
     opacity: 1; /* 完全不透明 */
   }
 }
-/* 將閃爍效果應用到目標元素 */
-.blink {
-  animation: blinking 1s infinite; /* 持續時間 1 秒，無限循環 */
-}
 
 body {
   padding: 30px;
-  display: flex;
-  justify-content: center;
   background-color: #081731;
-  /* #081731 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-direction: row; */
+  /* justify-content: center; */
   color: white;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.application {
+  padding: 30px;
+  max-width: 950px;
+  border: solid 1px white;  
+  border-radius: 28px;
+}
+/* 將閃爍效果應用到目標元素 */
+.blink {
+  animation: blinking 1s infinite; /* 持續時間 1 秒，無限循環 */
 }
 
 ul {
@@ -60,7 +70,6 @@ h1 {
   height: 180px;
   background-size: cover; 
 }
-
 h1,.img{
   display:inline-block;
 }
@@ -86,13 +95,7 @@ h3:after {
 .content{
   padding-left: 20px;
 }
-.application {
-  padding: 30px;
-  max-width: 950px;
-  border: solid 1px white;
-  /*圖片設定*/   
-  /*按鈕設定*/  
-}
+  /*連結設定*/ 
 .application .buttons a {
   color: #EF3E36;
   font-weight: bold;
@@ -100,6 +103,40 @@ h3:after {
   display: inline-block;
   margin: 0 15px 0 0;
   cursor: pointer;
+}
+/* 按鈕設定 */
+#btn4{
+  font-size: 12px;
+  font-weight: bold;
+  color:white;
+  letter-spacing: 1px;
+  padding: 4px 6px 4px;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  background-color: #081731;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+#btn4:after {
+  content: "";
+  background-color: #081731;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  border-radius: 3px;
+}
+#btn4:hover:after {
+  background-color: #ffe54c;
+  transition: ease-in-out 0.5s;
 }
 
 h2, .butttons {
@@ -140,11 +177,72 @@ h2, .butttons {
   font-weight: bold;
 }
 
+
+/* light mode */
+.light-mode{
+  padding: 30px;
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  /* #081731 */
+  color: #3E363F;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.light-mode .application{
+  background-color: #fafafd;
+  border-radius: 28px;
+} 
+.light-mode h3:after {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 6px;
+  background-color: #9799CA;
+  margin-left: 10px;
+  animation: blinking 1s infinite;
+}
+.light-mode .second{
+  border: 2px dotted #9799CA ;
+}
+#btn4:before{
+content: "日間模式";
+}
+
+.light-mode #btn4{
+background-color: #4a4e69;
+color: #cbf3f0;
+border: 1px solid #cbf3f0;
+}
+.light-mode #btn4:before{
+content: "夜間模式";
+}
+.light-mode #btn4:after {
+background-color: #cbf3f0;
+}
+.light-mode #btn4:hover:after {
+background-color: #081731;
+}
+.light-mode .lessonList a{
+color: #9799CA;
+text-decoration: none;
+display: inline-block;
+margin: 0;
+cursor: pointer;
+font-weight: bold;
+}
+.light-mode .application .buttons a {
+color: #7A7CB8;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+margin: 0 15px 0 0;
+cursor: pointer;
+}
+
+/* RWD */
 @media screen and (max-width: 768px) { 
   body {
     padding: 10px;
-    display: flex;
-    justify-content: center;
     background-color: #081731;
     /* #081731 */
     color: white;
@@ -152,7 +250,6 @@ h2, .butttons {
     line-height: 28px;
     letter-spacing: 1px;
   }
-
   h1{
     font-size: 28px;
   }
@@ -197,4 +294,14 @@ h2, .butttons {
     padding-top: 5px;
     padding-bottom: 18px;
   }
+/* light-mode */
+.light-mode{
+  padding: 10px;
+  background-color: #92BFB1;
+  /* #081731 */
+  color: #4a4e69;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
 }
