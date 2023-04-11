@@ -18,7 +18,7 @@
 
 body {
   padding: 30px;
-  background-color: #081731;
+  background: linear-gradient(to right, #24237a, #0b1017);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 .application {
   padding: 30px;
   max-width: 950px;
-  border: solid 1px white;  
+  border: 2px solid  white;  
   border-radius: 28px;
 }
 /* 將閃爍效果應用到目標元素 */
@@ -55,11 +55,12 @@ h1 {
     margin-top: 20px;
     margin-right: 25px;
     float: right;
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
     box-shadow: 0 0 0 2px;
-    background-image: url(https://i.pinimg.com/564x/b8/31/e1/b831e1eecb32c74822f1d6929ea2d15f.jpg);
+    /* background-image: url(https://i.pinimg.com/564x/b8/31/e1/b831e1eecb32c74822f1d6929ea2d15f.jpg); */
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/wehelpapplication-f0cc0.appspot.com/o/pic.jpeg?alt=media&token=c040731e-aa80-4cce-a5c4-6c4ed9c87695);
     background-size: cover;;
     color: rgba(256,256,256,1);   
 }
@@ -85,7 +86,7 @@ h3:after {
   display: inline-block;
   width: 20px;
   height: 6px;
-  background-color: #EF3E36;
+  background-color: #ED7866;
   margin-left: 10px;
   animation: blinking 1s infinite;
 }
@@ -97,7 +98,7 @@ h3:after {
 }
   /*連結設定*/ 
 .application .buttons a {
-  color: #EF3E36;
+  color: #ED7866;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
@@ -130,12 +131,12 @@ h3:after {
   z-index: -1;
   position: absolute;
   height: 100%;
-  top: 7px;
-  left: 7px;
+  top: 6px;
+  left: 6px;
   border-radius: 3px;
 }
 #btn4:hover:after {
-  background-color: #ffe54c;
+  background-color: #FFE072;
   transition: ease-in-out 0.5s;
 }
 
@@ -143,7 +144,7 @@ h2, .butttons {
   display: inline;
 }
 .second{
-  border: 2px dotted #EF3E36 ;
+  border: 2px dotted #ED7866 ;
   border-radius: 5px;
   padding: 5px;
   text-align: center;
@@ -169,7 +170,7 @@ h2, .butttons {
   padding: 5px 0;
 }
 .lessonList a{
-  color: #EF3E36;
+  color: #ED7866;
   text-decoration: none;
   display: inline-block;
   margin: 0;
@@ -181,9 +182,8 @@ h2, .butttons {
 /* light mode */
 .light-mode{
   padding: 30px;
-  background: linear-gradient(to right, #4b79a1, #283e51);
-  /* #081731 */
-  color: #3E363F;
+  background: linear-gradient(to right, #cbf3f0, #47a2a9);
+  color: #545454;  
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 1px;
@@ -191,30 +191,31 @@ h2, .butttons {
 .light-mode .application{
   background-color: #fafafd;
   border-radius: 28px;
+  border: 2px solid #545454;
 } 
 .light-mode h3:after {
   content: " ";
   display: inline-block;
   width: 20px;
   height: 6px;
-  background-color: #9799CA;
+  background-color: #EB9F8B;
   margin-left: 10px;
   animation: blinking 1s infinite;
 }
 .light-mode .second{
-  border: 2px dotted #9799CA ;
+  border: 2px dotted #EB9F8B ;
 }
 #btn4:before{
-content: "日間模式";
+content: "🌞 日間模式";
 }
 
 .light-mode #btn4{
 background-color: #4a4e69;
 color: #cbf3f0;
-border: 1px solid #cbf3f0;
+border: 1px solid #081731;
 }
 .light-mode #btn4:before{
-content: "夜間模式";
+content: "🌙 夜間限定";
 }
 .light-mode #btn4:after {
 background-color: #cbf3f0;
@@ -223,7 +224,7 @@ background-color: #cbf3f0;
 background-color: #081731;
 }
 .light-mode .lessonList a{
-color: #9799CA;
+color: #EB9F8B;
 text-decoration: none;
 display: inline-block;
 margin: 0;
@@ -231,7 +232,7 @@ cursor: pointer;
 font-weight: bold;
 }
 .light-mode .application .buttons a {
-color: #7A7CB8;
+color: #EB9F8B;
 font-weight: bold;
 text-decoration: none;
 display: inline-block;
