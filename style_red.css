@@ -92,7 +92,7 @@ h3:after {
 }
 .topic{
   margin-top: 25px;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   /* border: 2px solid white; */
 }
 .content{
@@ -255,10 +255,25 @@ cursor: pointer;
   }
   
   h1{
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
   h3{
-    font-size: 20px;
+    font-size: 17px;
+  }
+  h3:after {
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 5px;
+  background-color: #ED7866;
+  margin-left: 10px;
+  animation: blinking 1s infinite;
+} 
+  .topic{
+    margin-top: px;
+  }
+  .second{
+    margin: 0 12%;
   }
   .application .buttons a {
     color: #EF3E36;
@@ -270,12 +285,6 @@ cursor: pointer;
   }
   .img{
     margin-top: 0px;
-  }
-  .topic{
-    margin-top: 50px;
-  }
-  .title{
-    font-size: ;
   }
   .content{
     padding-left: 0;
@@ -305,10 +314,6 @@ cursor: pointer;
   .content_schedule,img2{
     display: inline;
 
-  }
-  .title{
-    padding-top: 5px;
-    padding-bottom: 18px;
   }
 /* light-mode */
 .light-mode{
