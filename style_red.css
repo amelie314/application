@@ -52,7 +52,7 @@ h1 {
   font-size: 32px;
 }
 .img{
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 25px;
     float: right;
     width: 120px;
@@ -74,9 +74,6 @@ h1 {
 h1,.img{
   display:inline-block;
 }
-.top{
-  margin-bottom: 25px;
-}
 h3 {
   margin: 0;
   margin-bottom: 15px;
@@ -90,8 +87,13 @@ h3:after {
   margin-left: 10px;
   animation: blinking 1s infinite;
 }
+.top{
+  padding-top: 10px;
+}
 .topic{
+  margin-top: 25px;
   margin-bottom: 36px;
+  /* border: 2px solid white; */
 }
 .content{
   padding-left: 20px;
@@ -251,8 +253,12 @@ cursor: pointer;
     line-height: 28px;
     letter-spacing: 1px;
   }
+  
   h1{
-    font-size: 28px;
+  margin-bottom: 30px;
+}
+  h3{
+    font-size: 20px;
   }
   .application .buttons a {
     color: #EF3E36;
@@ -262,6 +268,15 @@ cursor: pointer;
     margin: 0 15px 0 0;
     cursor: pointer;
   }
+  .img{
+    margin-top: 0px;
+  }
+  .topic{
+    margin-top: 50px;
+  }
+  .title{
+    font-size: ;
+  }
   .content{
     padding-left: 0;
   }
@@ -269,13 +284,13 @@ cursor: pointer;
     display: inline;
   }
   .lessonList {
-    padding-top: 32px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
   .lessonList li{
-    padding: 15px;
+    padding: 10px;
     width: 180px;
     margin-right: 3px;
     margin-bottom: 20px;
