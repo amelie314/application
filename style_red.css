@@ -250,7 +250,7 @@ cursor: pointer;
     /* #081731 */
     color: white;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 1.6;
     letter-spacing: 1px;
   }
   
@@ -258,7 +258,7 @@ cursor: pointer;
     margin-bottom: 30px;
   }
   h3{
-    font-size: 17px;
+    font-size: 18px;
   }
   h3:after {
   content: " ";
@@ -270,10 +270,14 @@ cursor: pointer;
   animation: blinking 1s infinite;
 } 
   .topic{
-    margin-top: px;
+    margin-top: 50px;
   }
-  .second{
-    margin: 0 12%;
+  .content{
+    padding: 5px;
+  }
+
+  .second{ 
+    margin: 30px 1% 10px 1%;
   }
   .application .buttons a {
     color: #EF3E36;
@@ -289,20 +293,17 @@ cursor: pointer;
   .content{
     padding-left: 0;
   }
-  h2, .butttons {
-    display: inline;
-  }
+  
   .lessonList {
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
   .lessonList li{
-    padding: 10px;
-    width: 180px;
+    padding: 10px 35px 10px 35px;
+    width: 200px;
     margin-right: 3px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid #C2C5CC;
     border-radius: 5px; 
   }
@@ -312,9 +313,13 @@ cursor: pointer;
     font-size: 18px;
   }
   .content_schedule,img2{
-    display: inline;
-
+    display: inline-block;
   }
+  .img2{
+    float: center;
+    margin-right: 50px;
+  }
+
 /* light-mode */
 .light-mode{
   padding: 10px;
